@@ -44,7 +44,7 @@ jobs:
       - name: Download Wiz CLI
         run: curl -o wizcli https://downloads.wiz.io/v1/wizcli/latest/wizcli-linux-amd64 && chmod +x wizcli
 
-      - name: Run Wiz CLI image scan
+      - name: Run Wiz CLI image scan, added missing policy in Wiz
         id: scan
         run: |
           mkdir -p $WIZ_DIR
