@@ -90,7 +90,7 @@ jobs:
           echo "Pulling Docker image with URI: $IMAGE_TAG"
           docker pull $IMAGE_TAG
 
-      - name: Deploy to Amazon ECS Express Mode
+      - name: Deploy to Amazon ECS Express Mode, added arn
         env:
           AWS_REGION: "us-east-1"
           SERVICE_ARN: ${{ secrets.ECS_EXPRESS_SERVICE_ARN }}
